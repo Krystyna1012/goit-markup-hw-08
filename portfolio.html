@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+ <link rel="stylesheet" href="./css/main.min.css">
+<!-- for error favicon.ico-->
+<!-- <link rel="icon" href="your_address_icon" type="image/x-icon"> -->
+</head>
+
+<body>
+    <!--Шапка-->
+<header>
+    <div class="container container-header">
+        <div class="button-position">
+            <a href="./index.html" class="logo" lang="en" target="_blank">Web<span class="logo-header">Studio</span></a>
+            <button type="button" class="logo__menu-open js-open-menu" aria-expanded="false"
+                aria-controls="menu-navigation">
+                <svg class="mobil-menu" width="24" height="16" aria-label="переключатель мобильного меню">
+
+                    <use class="logo__mobil-open" href="./images/icons/menu-heder.svg#mobil-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-navigation js-menu-container" id="menu-navigation">
+            <button type="button" class="logo__menu-close js-close-menu" aria-expanded="false"
+                aria-controls="menu-navigation" data-menu-button>
+                <svg class="mobil-menu" width="24" height="16" aria-label="переключатель мобильного меню">
+                    <use class="logo__mobil-close" href="./images/icons/menu-heder.svg#mobil-menu_close"></use>
+
+                </svg>
+            </button>
+            <nav>
+                <ul class="site-nav">
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="site-nav__link">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-contact">
+                <ul class="contact">
+                    <li class="contact__item">
+                        <a href="mailto:info@devstudio.com" class="contact__link"> <svg class="contact__icon" width="16"
+                                height="12">
+                                <use href="images/icons/contacts.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+380961111111" class="contact__link"> <svg class="contact__icon" width="10"
+                                height="16">
+                                <use href="images/icons/contacts.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social">
+                <li class="social__list">
+                    <a href="#" class="social__media">Instagram</a>
+                </li>
+                <li class="social__list">
+                    <a href="#" class="social__media">Twitter</a>
+                </li>
+                <li class="social__list">
+                    <a href="#"class="social__media">Facebook</a>
+                </li>
+                <li class="social__list">
+                    <a href="#" class="social__media">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <main>
+        <section class="section"><div class="container">
+            <ul class="filtr-list" >
+                <li  class="filtr-list__item"><button type="button" class="filtr-list__button">Все</button></li>
+                <li  class="filtr-list__item"><button type="button" class="filtr-list__button">Веб-сайты</button></li>
+                <li  class="filtr-list__item"><button type="button" class="filtr-list__button">Приложения</button></li>
+                <li  class="filtr-list__item"><button type="button" class="filtr-list__button">Дизайн</button></li>
+                <li  class="filtr-list__item"><button type="button" class="filtr-list__button">Маркетинг</button></li>
+            </ul>
+            <ul class="picture-list">
+                <li class="picture-list__item">
+                    <a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-1@1x.jpg   354w,
+                                                                                                        images/portfolio-desk/project-1@1x.jpg     370w,
+                                                                                                        images/portfolio-mob/project-1@1x.jpg     450w,
+                                                                                                        images/portfolio-tab/project-1@2x.jpg 708w,
+                                                                                                        images/portfolio-desk/project-1@2x.jpg 740w,
+                                                                                                       images/portfolio-mob/project-1@2x.jpg     900w
+                                                                                                      " sizes="(min-width: 1200px) 370px,
+                                                                                                        (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw
+                                                                                            
+                                                                                                        "
+                                src="/portfolio-desk/project-1@1x.jpg " alt="picture" />
+                            <p class="work-wrapper__text">Технокряк это современная площадка распространения коронавируса. Компании
+                                используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="picture-list__element picture-list__one ">
+                            <h3 class="picture-list__name">Технокряк</h3>
+                            <p class="picture-list__title">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+            
+                <li class="picture-list__item">
+                    <a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-2@1x.jpg   354w,
+                                                                                                               images/portfolio-desk/project-2@1x.jpg     370w,
+                                                                                                                images/portfolio-mob/project-2@1x.jpg     450w,
+                                                                                                               images/portfolio-tab/project-2@2x.jpg      708w,
+                                                                                                               images/portfolio-desk/project-2@2x.jpg     740w,
+                                                                                                              images/portfolio-mob/project-2@2x.jpg     900w
+                                                                                                              "
+                                sizes="(min-width: 1200px) 370px,
+                                                                                                             (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" src="/portfolio-desk/project-2@1x.jpg "
+                                alt="picture" />
+                            <p class="work-wrapper__text"></p>
+                        </div>
+                        <div class="picture-list__element">
+                            <h3 class="picture-list__name">Постер New Orlean vs Golden Star</h3>
+                            <p class="picture-list__title">Дизайн</p>
+                        </div>
+                    </a> 
+                </li>
+                <li class="picture-list__item"><a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-3@1x.jpg   354w,
+                                                                                                            images/portfolio-desk/project-3@1x.jpg     370w,
+                                                                                                             images/portfolio-mob/project-3@1x.jpg     450w,
+                                                                                                             images/portfolio-tab/project-3@2x.jpg      708w,
+                                                                                                             images/portfolio-desk/project-3@2x.jpg     740w,
+                                                                                                            images/portfolio-mob/project-3@2x.jpg     900w "
+                                sizes="(min-width: 1200px) 370px,
+             (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" src="/portfolio-desk/project-3@1x.jpg " alt="picture" />
+                            <p class="work-wrapper__text"></p>
+                        </div>
+                        <div class="picture-list__element">
+                            <h3 class="picture-list__name">Ресторан Seafood</h3>
+                            <p class="picture-list__title">Приложение</p>
+                        </div>
+                    </a> </li>
+                <li class="picture-list__item"><a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-4@1x.jpg   354w,
+                                                                                                                                                       images/portfolio-desk/project-4@1x.jpg     370w,
+                                                                                                                                                        images/portfolio-mob/project-4@1x.jpg     450w,
+                                                                                                                                                       images/portfolio-tab/project-4@2x.jpg      708w,
+                                                                                                                                                       images/portfolio-desk/project-4@2x.jpg     740w,
+                                                                                                                                                      images/portfolio-mob/project-4@2x.jpg     900w
+                                                                                                                                                      "
+                                sizes="(min-width: 1200px) 370px,
+                                                                                                                                                     (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="/portfolio-desk/project-4@1x.jpg " alt="picture" />
+                            <p class="work-wrapper__text"></p>
+                        </div>
+                        <div class="picture-list__element">
+                            <h3 class="picture-list__name">Проект Prime</h3>
+                            <p class="picture-list__title">Маркетинг</p>
+                        </div>
+                    </a> </li>
+                <li class="picture-list__item"><a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-5@1x.jpg   354w,
+                                                                                                                                                       images/portfolio-desk/project-5@1x.jpg     370w,
+                                                                                                                                                        images/portfolio-mob/project-5@1x.jpg     450w,
+                                                                                                                                                       images/portfolio-tab/project-5@2x.jpg      708w,
+                                                                                                                                                       images/portfolio-desk/project-5@2x.jpg     740w,
+                                                                                                                                                      images/portfolio-mob/project-5@2x.jpg     900w
+                                                                                                                                                      "
+                                sizes="(min-width: 1200px) 370px,
+                                                                                                                                                     (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="/portfolio-desk/project-5@1x.jpg " alt="picture" />
+                            <p class="work-wrapper__text"></p>
+                        </div>
+                        <div class="picture-list__element">
+                            <h3 class="picture-list__name">Проект Boxes</h3>
+                            <p class="picture-list__title">Приложение</p>
+                        </div>
+                    </a> </li>
+                <li class="picture-list__item"><a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-6@1x.jpg   354w,
+                                                                                                                                                       images/portfolio-desk/project-6@1x.jpg     370w,
+                                                                                                                                                        images/portfolio-mob/project-6@1x.jpg     450w,
+                                                                                                                                                       images/portfolio-tab/project-6@2x.jpg      708w,
+                                                                                                                                                       images/portfolio-desk/project-6@2x.jpg     740w,
+                                                                                                                                                      images/portfolio-mob/project-6@2x.jpg     900w
+                                                                                                                                                      "
+                                sizes="(min-width: 1200px) 370px,
+                                                                                                                                                     (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="/portfolio-desk/project-6@1x.jpg " alt="picture" />
+                            <p class="work-wrapper__text"></p>
+                        </div>
+                        <div class="picture-list__element">
+                            <h3 class="picture-list__name">Inspiration has no Borders </h3>
+                            <p class="picture-list__title">Веб-сайт</p>
+                        </div>
+                    </a> </li>
+                <li class="picture-list__item"><a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-7@1x.jpg   354w,
+                                                                                                                                                   images/portfolio-desk/project-7@1x.jpg     370w,
+                                                                                                                                                    images/portfolio-mob/project-7@1x.jpg     450w,
+                                                                                                                                                   images/portfolio-tab/project-7@2x.jpg      708w,
+                                                                                                                                                   images/portfolio-desk/project-7@2x.jpg     740w,
+                                                                                                                                                  images/portfolio-mob/project-7@2x.jpg     900w
+                                                                                                                                                  "
+                                sizes="(min-width: 1200px) 370px,
+                                                                                                                                                 (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="/portfolio-desk/project-7@1x.jpg " alt="picture" />
+                            <p class="work-wrapper__text"></p>
+                        </div>
+                        <div class="picture-list__element">
+                            <h3 class="picture-list__name">Издание Limited Edition</h3>
+                            <p class="picture-list__title">Дизайн</p>
+                        </div>
+                    </a> </li>
+                <li class="picture-list__item"><a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-8@1x.jpg   354w,
+                                                                                                                                                       images/portfolio-desk/project-8@1x.jpg     370w,
+                                                                                                                                                        images/portfolio-mob/project-8@1x.jpg     450w,
+                                                                                                                                                       images/portfolio-tab/project-8@2x.jpg      708w,
+                                                                                                                                                       images/portfolio-desk/project-8@2x.jpg     740w,
+                                                                                                                                                      images/portfolio-mob/project-8@2x.jpg     900w
+                                                                                                                                                      "
+                                sizes="(min-width: 1200px) 370px,
+                                                                                                                                                     (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="/portfolio-desk/project-8@1x.jpg " alt="picture" />
+                            <p class="work-wrapper__text"></p>
+                        </div>
+                        <div class="picture-list__element">
+                            <h3 class="picture-list__name">Проект LAB</h3>
+                            <p class="picture-list__title">Маркетинг</p>
+                        </div>
+                    </a></li>
+                <li class="picture-list__item"><a href="" class="picture-list__link">
+                        <div class="work-wrapper">
+                            <img srcset="images/portfolio-tab/project-9@1x.jpg   354w,
+                                                                                                                                                   images/portfolio-desk/project-9@1x.jpg     370w,
+                                                                                                                                                    images/portfolio-mob/project-9@1x.jpg     450w,
+                                                                                                                                                   images/portfolio-tab/project-9@2x.jpg      708w,
+                                                                                                                                                   images/portfolio-desk/project-9@2x.jpg     740w,
+                                                                                                                                                  images/portfolio-mob/project-9@2x.jpg     900w
+                                                                                                                                                  "
+                                sizes="(min-width: 1200px) 370px,
+                                                                                                                                                 (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="/portfolio-desk/project-9@1x.jpg " alt="picture" />
+                            <p class="work-wrapper__text"></p>
+                        </div>
+                        <div class="picture-list__element">
+                            <h3 class="picture-list__name">Growing Business</h3>
+                            <p class="picture-list__title">Приложение</p>
+                        </div>
+                    </a></li>
+            </ul>
+            </div>
+    
+        </section>
+    </main>
+
+<footer class="footer-wrap">
+    <div class="container footer-container">
+        <div class="footer-address"><a href="" class="logo" lang="en">Web<span class="logo-footer">Studio</span></a>
+            <address class="address">
+                г. Киев, пр-т Леси Украинки, 26
+                <ul class="address-contact">
+                    <li class="address-contact__item"><a href="mailto:info@devstudio.com"
+                            class="address-contact__link">info@devstudio.com</a></li>
+                    <li class="address-contact__item"><a href="tel:+380961111111" class="address-contact__link">+38 096
+                            111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+        <div class="invitation-footer">
+            <p class="invitation-footer__welcome">присоединяйтесь</p>
+            <ul class="social-list">
+                <li class="social-list__item"><a href="#" class="social-list__link link-footer" aria-label="instagram">
+                        <svg class="social-list__icons" width="20" height="20">
+                            <use href="./images/icons/sprite.svg#instagram" class="instagram"></use>
+                        </svg></a>
+                </li>
+                <li class="social-list__item"><a href="#" class="social-list__link link-footer" aria-label=" twitter">
+                        <svg class="social-list__icons" width="20" height="20">
+                            <use href="./images/icons/sprite.svg#twitter" class=" twitter"></use>
+                        </svg></a>
+                </li>
+                <li class="social-list__item"><a href="#" class="social-list__link link-footer" aria-label="facebook">
+                        <svg class="social-list__icons" width="20" height="20">
+                            <use href="./images/icons/sprite.svg#facebook" class="facebook"></use>
+                        </svg></a>
+                </li>
+                <li class="social-list__item"><a href="#" class="social-list__link link-footer" aria-label="linkedin">
+                        <svg class="social-list__icons" width="20" height="20">
+                            <use href="./images/icons/sprite.svg#linkedin" class="linkedin"></use>
+                        </svg></a>
+                </li>
+            </ul>
+        </div>
+        <form class="footer-form">
+            <h2 class="footer-form__label">Подпишитесь на рассылку</h2>
+            <div class="subscribe">
+                <input class="footer-form__input" type="email" name="email" id="email" placeholder="E-mail">
+                <button type="submit" class="footer-form__button">Подписаться
+                    <span class="footer-form__icon"><svg width="24" height="24">
+                            <use href="images/icons/icone.svg#icon-send"></use>
+                        </svg></span></button>
+            </div>
+        </form>
+    </div>
+
+</footer>
+<script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
