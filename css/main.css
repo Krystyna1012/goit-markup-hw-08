@@ -1135,7 +1135,6 @@ header {
 
 /*Особенности*/
 .features-list {
-  display: block;
   width: 100%;
 }
 
@@ -1154,8 +1153,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    margin-top: 50px;
   }
 }
 
@@ -1646,6 +1644,13 @@ header {
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+@media screen and (max-width: 479px) {
+  .work-wrapper__text {
+    padding: 40px 24px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 480px) {
