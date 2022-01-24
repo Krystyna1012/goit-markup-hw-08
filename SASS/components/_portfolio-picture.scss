@@ -66,7 +66,9 @@
 .work-wrapper {
   overflow: hidden;
   position: relative;
-  height: 294px;
+  @media screen and (min-width: 480px) {
+    height: 294px;
+  }
 
   &__text {
     top: 0;
